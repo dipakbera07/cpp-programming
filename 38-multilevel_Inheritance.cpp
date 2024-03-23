@@ -40,7 +40,8 @@ class result : public exam{
         float percentage;
     public:
         void display(){
-
+            get_rollNumber();
+            get_marks();
             cout<<"Percentage obtained by the student is: "<<(math+physics)/2<<endl;
         }
 };
@@ -49,8 +50,6 @@ int main(){
     result dipak;
     dipak.set_rollNumber(10);
     dipak.set_marks(40,60);
-    dipak.get_rollNumber();
-    dipak.get_marks();
     dipak.display();
 return 0;
 }
